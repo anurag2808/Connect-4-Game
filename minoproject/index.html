@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Connect Four</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="menu" id="main-menu">
+        <h1>Select Difficulty</h1>
+        <div class="buttons">
+            <button class="difficulty-button" id="easy">Easy</button>
+            <button class="difficulty-button" id="medium">Medium</button>
+            <button class="difficulty-button" id="hard">Hard</button>
+        </div>
+    </div>
+
+    <div class="game-container" id="game-container" style="display:none;">
+        <div class="status" id="message"></div>
+        <canvas id="gameCanvas" width="700" height="700"></canvas>
+        <br>
+        <button id="restart-button">Restart Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+/* styles.css */
+
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+.menu, .game-container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #000;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.difficulty-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #ff4757;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.difficulty-button:hover {
+    background-color: #ff6b81;
+    transform: scale(1.05);
+}
+
+/* Status text styling */
+.status {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px #000;
+    min-height: 40px;
+}
+
+/* Game canvas styling */
+#gameCanvas {
+    border: 10px solid #2f3542;
+    border-radius: 15px;
+    background-color: #57606f;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+#restart-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #1e90ff;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#restart-button:hover {
+    background-color: #63a4ff;
+    transform: scale(1.05);
+}
